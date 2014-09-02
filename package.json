@@ -2,6 +2,20 @@
   "name": "winston-orchestrate",
   "version": "0.0.1",
   "author": "Asa Miller",
+  "contributors": [
+    {
+      "name": "Diana Thayer",
+      "email": "garbados@gmail.com"
+    }
+  ],
+  "scripts": {
+    "test": "npm run jshint && npm run jscoverage && npm run mocha",
+    "debug": "npm run jshint && NODE_DEBUG=true npm run mocha",
+    "jshint": "./node_modules/.bin/jshint lib test",
+    "jscoverage": "./node_modules/.bin/jscoverage lib lib-cov",
+    "mocha": "./node_modules/.bin/mocha -R spec",
+    "report": "./node_modules/.bin/mocha -R html-cov > coverage.html"
+  },
   "repository": {
     "type": "git",
     "url": "https://github.com/asamiller/winston-orchestrate"
@@ -19,11 +33,14 @@
     "orchestrate": "^0.3.4",
     "winston": "~0.7.2"
   },
-  "main": "./lib/winston-orchestrate",
+  "main": "./lib/index.js",
   "engines": {
     "node": ">= 0.6.0"
   },
   "devDependencies": {
-    "mocha": "^1.21.4"
+    "jscoverage": "^0.5.6",
+    "jshint": "^2.5.5",
+    "mocha": "^1.21.4",
+    "nock": "^0.46.0"
   }
 }
