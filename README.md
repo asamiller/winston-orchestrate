@@ -1,15 +1,6 @@
-winston-orchestrate
+## Winston Transport for Orchestrate
 
-Winston Transport for Orchestrate
-
-$ npm install winston-orchestrate 
-
-Also requires install of winston
-
-$ npm install winston
-
-
-Basic transport that works just like all other winston transports. Sends logged messages to an Orchestrate Collection
+Basic transport that works just like all other winston transports. Sends logged messages to an Orchestrate collection.
 
 ## options:
 
@@ -18,12 +9,7 @@ collection: name of the collection to put it in
 
 <code>
     var winston = require('winston');
-    var something = require('winston-orchestrate').Orchestrate;
+    var orchestrate = require('../lib/winston-orchestrate.js');
 
-    winston.add(something, {
-        apiToken: "XXX",
-        collection: "testing",
-        level: 'error',
-        handleExceptions : true
-    });
+    winston.add(winston.transports.Orchestrate, { apiKey: 'xxx', collection: 'test' });
 </code>
