@@ -1,0 +1,29 @@
+{
+  "name": "winston-orchestrate",
+  "version": "0.0.1",
+  "author": "Asa Miller",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/asamiller/winston-orchestrate"
+  },
+  "keywords": [
+    "logging",
+    "sysadmin",
+    "tools",
+    "winston",
+    "orchestrate",
+    "log",
+    "logger"
+  ],
+  "dependencies": {
+    "orchestrate": "^0.3.4",
+    "winston": "~0.7.2"
+  },
+  "main": "./lib/winston-orchestrate",
+  "engines": {
+    "node": ">= 0.6.0"
+  },
+  "devDependencies": {
+    "mocha": "^1.21.4"
+  }
+}
