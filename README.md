@@ -1,5 +1,7 @@
 ## Winston Transport for Orchestrate
 
+*Still a work-in-progress*
+
 Basic transport that works just like all other winston transports. Sends logged messages to an Orchestrate collection.
 
 ## options:
@@ -8,8 +10,8 @@ apiToken: API token for Orchestrate
 collection: name of the collection to put it in
 
 ``` javascript
-    var winston = require('winston');
-    var orchestrate = require('../lib/winston-orchestrate.js');
+var winston = require('winston');
+var orchestrate = require('../lib/winston-orchestrate.js');
 
-    winston.add(winston.transports.Orchestrate, { apiKey: 'xxx', collection: 'test' });
+winston.add(winston.transports.Orchestrate, { apiKey: 'xxx', collection: 'test' });
 ```
