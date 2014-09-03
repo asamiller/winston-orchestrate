@@ -1,7 +1,7 @@
 ## Winston Transport for Orchestrate
 
-[![Build Status](https://travis-ci.org/garbados/winston-orchestrate.svg)](https://travis-ci.org/garbados/winston-orchestrate)
-[![Coverage Status](https://coveralls.io/repos/garbados/winston-orchestrate/badge.png)](https://coveralls.io/r/garbados/winston-orchestrate)
+[![Build Status](https://travis-ci.org/asamiller/winston-orchestrate.svg)](https://travis-ci.org/garbados/winston-orchestrate)
+[![Coverage Status](https://coveralls.io/repos/asamiller/winston-orchestrate/badge.png)](https://coveralls.io/r/garbados/winston-orchestrate)
 
 *Still a work-in-progress*
 
