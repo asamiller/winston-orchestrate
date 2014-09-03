@@ -14,7 +14,8 @@
     "jshint": "./node_modules/.bin/jshint lib test",
     "jscoverage": "./node_modules/.bin/jscoverage lib lib-cov",
     "mocha": "./node_modules/.bin/mocha -R spec",
-    "report": "./node_modules/.bin/mocha -R html-cov > coverage.html"
+    "report": "./node_modules/.bin/mocha -R html-cov > coverage.html",
+    "coveralls": "./node_modules/.bin/mocha -R mocha-lcov-reporter | ./node_modules/coveralls/bin/coveralls.js"
   },
   "repository": {
     "type": "git",
@@ -38,9 +39,11 @@
     "node": ">= 0.6.0"
   },
   "devDependencies": {
+    "coveralls": "^2.11.1",
     "jscoverage": "^0.5.6",
     "jshint": "^2.5.5",
     "mocha": "^1.21.4",
+    "mocha-lcov-reporter": "0.0.1",
     "nock": "^0.46.0"
   }
 }
