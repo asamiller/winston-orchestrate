@@ -15,7 +15,7 @@
     "jscoverage": "./node_modules/.bin/jscoverage lib lib-cov",
     "mocha": "./node_modules/.bin/mocha -R spec",
     "report": "./node_modules/.bin/mocha -R html-cov > coverage.html",
-    "coveralls": "./node_modules/.bin/mocha -R mocha-lcov-reporter | ./node_modules/.bin/coveralls"
+    "coveralls": "./node_modules/.bin/mocha -R mocha-lcov-reporter | ./node_modules/coveralls/bin/coveralls.js"
   },
   "repository": {
     "type": "git",
