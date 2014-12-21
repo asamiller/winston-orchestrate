@@ -31,14 +31,16 @@
     "logger"
   ],
   "dependencies": {
-    "orchestrate": "^0.3.4",
-    "winston": "~0.7.2"
+    "orchestrate": "^0.3.15",
+    "winston": "^0.8.3"
   },
   "main": "./lib/index.js",
   "engines": {
     "node": ">= 0.6.0"
   },
   "devDependencies": {
+    "mocha": "^1.21.5",
+    "nock": "^0.46.1",
     "coveralls": "^2.11.1",
     "jscoverage": "^0.5.6",
     "jshint": "^2.5.5",
